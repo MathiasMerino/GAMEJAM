@@ -1,0 +1,61 @@
+# ==============================
+# UNITY
+# ==============================
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Builds
+[Bb]uild/
+[Bb]uilds/
+
+# Unity cache
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# ==============================
+# UNITY VERSION CONTROL / PLASTIC
+# ==============================
+
+.plastic/
+ignore.conf
+
+# ==============================
+# VISUAL STUDIO
+# ==============================
+
+.vs/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+# ==============================
+# JETBRAINS / RIDER
+# ==============================
+
+.idea/
+*.sln.iml
+
+# ==============================
+# SISTEMA OPERATIVO
+# ==============================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# OTROS
+# ==============================
+
+*.apk
+*.aab
+*.unitypackage
