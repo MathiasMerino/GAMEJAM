@@ -43,6 +43,7 @@ ignore.conf
 
 .idea/
 *.sln.iml
+*.slnx
 
 # ==============================
 # SISTEMA OPERATIVO
