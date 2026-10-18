@@ -21,7 +21,7 @@ public class MovimientoPlayer : MonoBehaviour
     {
         movimiento = 0f;
 
-        if (Keyboard.current == null) return;
+        if (Keyboard.current == null || Time.timeScale == 0f) return;
 
         if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
             movimiento = -1f;
@@ -29,7 +29,7 @@ public class MovimientoPlayer : MonoBehaviour
         if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
             movimiento = 1f;
 
-        bool tocandoSuelo = Physics2D.OverlapCircle(
+        bool tocandoSuelo = groundCheck != null && Physics2D.OverlapCircle(
             groundCheck.position,
             radioSuelo,
             capaSuelo

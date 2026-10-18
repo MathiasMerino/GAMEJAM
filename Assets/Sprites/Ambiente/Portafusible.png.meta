@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: ade6cc3751dbbfe47b98d1e7a0dd5273
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8780321572576757569
+    second: Portafusible_0
+  - first:
+      213: -5712515509223034440
+    second: Portafusible_1
+  - first:
+      213: 3870354218366710229
+    second: Portafusible_2
+  - first:
+      213: -4127512315307291631
+    second: Portafusible_3
+  - first:
+      213: -8697515007091131835
+    second: Portafusible_4
+  - first:
+      213: -2031922024253404386
+    second: Portafusible_5
+  - first:
+      213: -8643670848479117432
+    second: Portafusible_6
+  - first:
+      213: 5073261278817926255
+    second: Portafusible_7
+  - first:
+      213: 7151940030257853879
+    second: Portafusible_8
+  - first:
+      213: 2763289336569858359
+    second: Portafusible_9
+  - first:
+      213: 2927125028595842851
+    second: Portafusible_10
+  - first:
+      213: 5643527763271860482
+    second: Portafusible_11
+  - first:
+      213: -5782968400310771230
+    second: Portafusible_12
+  - first:
+      213: 6486098839910820387
+    second: Portafusible_13
+  - first:
+      213: -5450156268206604698
+    second: Portafusible_14
+  - first:
+      213: -5013982011278494266
+    second: Portafusible_15
+  - first:
+      213: -2804700189622146489
+    second: Portafusible_16
+  - first:
+      213: -4730167274831609178
+    second: Portafusible_17
+  - first:
+      213: 2972106745556078252
+    second: Portafusible_18
+  - first:
+      213: 1249244325633928699
+    second: Portafusible_19
+  - first:
+      213: -264943641671153948
+    second: Portafusible_20
+  - first:
+      213: 7159479494415903196
+    second: Portafusible_21
+  - first:
+      213: 5952224124122892278
+    second: Portafusible_22
+  - first:
+      213: -4982275293807922785
+    second: Portafusible_23
+  - first:
+      213: 7822637732934671481
+    second: Portafusible_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Portafusible_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 1451
+        height: 938
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147032b33f7f9d970800000000000000
+      internalID: 8780321572576757569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_1
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 903
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1f9da196119b0b0800000000000000
+      internalID: -5712515509223034440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_2
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 903
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1bea4d7a246b530800000000000000
+      internalID: 3870354218366710229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 893
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c0f00fa6128b6c0800000000000000
+      internalID: -4127512315307291631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_4
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 903
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a34b5be283c4780800000000000000
+      internalID: -8697515007091131835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_5
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 881
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b451d3fa92dc3e0800000000000000
+      internalID: -2031922024253404386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_6
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 878
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fb001d8238b0880800000000000000
+      internalID: -8643670848479117432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_7
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 889
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cbfa8f048d76640800000000000000
+      internalID: 5073261278817926255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 558
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b57a6e909bc04360800000000000000
+      internalID: 7151940030257853879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_9
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 159
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7390fd5d20d295620800000000000000
+      internalID: 2763289336569858359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 176
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f3c9674bc3f9820800000000000000
+      internalID: 2927125028595842851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_11
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 161
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201cfd99996d15e40800000000000000
+      internalID: 5643527763271860482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_12
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 162
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1ea2021e4cebfa0800000000000000
+      internalID: -5782968400310771230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_13
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 167
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a25f2b780430a50800000000000000
+      internalID: 6486098839910820387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_14
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 145
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e3d2f00c72d54b0800000000000000
+      internalID: -5450156268206604698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_15
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 161
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5fb8b0de1ca6ab0800000000000000
+      internalID: -5013982011278494266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_16
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 161
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ae9189904b319d0800000000000000
+      internalID: -2804700189622146489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_17
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 145
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a20c7fcce11b5eb0800000000000000
+      internalID: -4730167274831609178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_18
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 161
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae8963965b0f3920800000000000000
+      internalID: 2972106745556078252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_19
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 147
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd251b6815365110800000000000000
+      internalID: 1249244325633928699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_20
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 145
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e641b0692bb25cf0800000000000000
+      internalID: -264943641671153948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_21
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 145
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd96a59eaa49b5360800000000000000
+      internalID: 7159479494415903196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_22
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 151
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f70bddfd4c8a9250800000000000000
+      internalID: 5952224124122892278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_23
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 145
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91bf5b74076bdab0800000000000000
+      internalID: -4982275293807922785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portafusible_24
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 143
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c532e62979f8c60800000000000000
+      internalID: 7822637732934671481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Portafusible_0: 8780321572576757569
+      Portafusible_1: -5712515509223034440
+      Portafusible_10: 2927125028595842851
+      Portafusible_11: 5643527763271860482
+      Portafusible_12: -5782968400310771230
+      Portafusible_13: 6486098839910820387
+      Portafusible_14: -5450156268206604698
+      Portafusible_15: -5013982011278494266
+      Portafusible_16: -2804700189622146489
+      Portafusible_17: -4730167274831609178
+      Portafusible_18: 2972106745556078252
+      Portafusible_19: 1249244325633928699
+      Portafusible_2: 3870354218366710229
+      Portafusible_20: -264943641671153948
+      Portafusible_21: 7159479494415903196
+      Portafusible_22: 5952224124122892278
+      Portafusible_23: -4982275293807922785
+      Portafusible_24: 7822637732934671481
+      Portafusible_3: -4127512315307291631
+      Portafusible_4: -8697515007091131835
+      Portafusible_5: -2031922024253404386
+      Portafusible_6: -8643670848479117432
+      Portafusible_7: 5073261278817926255
+      Portafusible_8: 7151940030257853879
+      Portafusible_9: 2763289336569858359
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

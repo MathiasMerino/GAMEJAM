@@ -3,10 +3,13 @@ using UnityEngine.InputSystem;
 
 public class NotaInteractuable : MonoBehaviour, IInteractuable
 {
+    public static int UltimoFrameCierre { get; private set; } = -1;
     public GameObject imagenNota;
+    [TextArea(3, 10)] public string textoNota;
 
     private bool abierta = false;
     private int frameApertura;
+    private float tiempoAnterior = 1f;
 
     public void Interactuar()
     {
@@ -15,7 +18,9 @@ public class NotaInteractuable : MonoBehaviour, IInteractuable
         abierta = true;
         frameApertura = Time.frameCount;
 
-        imagenNota.SetActive(true);
+        if (imagenNota != null) imagenNota.SetActive(true);
+        if (imagenNota == null && !string.IsNullOrEmpty(textoNota)) InterfazPartida.Leer(textoNota);
+        tiempoAnterior = Time.timeScale;
         Time.timeScale = 0f;
     }
 
@@ -41,8 +46,11 @@ public class NotaInteractuable : MonoBehaviour, IInteractuable
 
     void CerrarNota()
     {
+        UltimoFrameCierre = Time.frameCount;
         abierta = false;
-        imagenNota.SetActive(false);
-        Time.timeScale = 1f;
+        if (imagenNota != null) imagenNota.SetActive(false);
+        InterfazPartida.CerrarLectura();
+        Time.timeScale = tiempoAnterior;
     }
+    void OnDisable() { if (abierta) CerrarNota(); }
 }

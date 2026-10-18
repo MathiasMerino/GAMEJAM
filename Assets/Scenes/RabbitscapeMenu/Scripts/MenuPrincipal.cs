@@ -7,7 +7,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Jugar()
     {
-        SceneManager.LoadScene("EscenaInicial");
+        EstadoPartida.Instancia.NuevaPartida();
     }
 
     public void Salir()
