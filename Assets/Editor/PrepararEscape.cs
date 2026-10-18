@@ -40,6 +40,9 @@ public static class PrepararEscape
         foreach(var n in new[]{"Persecucion","EscapeVertical","Valle","HabitacionFinal"})
             if(!escenas.Any(e=>e.path==Ruta(n)))escenas.Add(new EditorBuildSettingsScene(Ruta(n),true));
         EditorBuildSettings.scenes=escenas.ToArray();AssetDatabase.SaveAssets();
+        PulirNiveles.Aplicar();
+        IntegrarCortez.Aplicar();
+        IntegrarJugadorGrecia.Aplicar();
     }
     static bool Nueva(string n)
     {
@@ -124,7 +127,7 @@ public static class PrepararEscape
         Caja("ParedIzquierda",-4.7f,15,.2f,32);Caja("ParedDerecha",4.7f,15,.2f,32);
         var p=Jugador(-2,2.55f);p.fuerzaSalto=8;
         var recuperacion=p.GetComponent<RecuperarJugador>();recuperacion.seguirAlturaCheckpoint=true;recuperacion.limiteCaida=-3;
-        Enemigo(-2,-3,true);
+        // El parkour se recorre sin enemigo.
         var puerta=Caja("PuertaFinal",-.4f,28.15f,1.8f,2.4f,true).gameObject.AddComponent<PuertaFinal>();puerta.indicacion="Abrir salida";
         var cam=Camera.main.GetComponent<CamaraNivel>();cam.seguirVertical=true;cam.altura=4;cam.semiancho=5;cam.minimoY=4;cam.maximoY=26;
         Guardar("EscapeVertical");
@@ -172,4 +175,5 @@ public static class PrepararEscape
         Go("RegistroFinal",0,0).AddComponent<FinalExperimento>();Guardar("HabitacionFinal");
     }
 }
+
 

@@ -19,6 +19,8 @@ public static class ValidarNiveles
     static ValidarNiveles() { EditorApplication.playModeStateChanged += CambiarModo; }
     public static void EjecutarMensajes()
     { SessionState.SetBool("GAMEJAM.SoloMensajes",true); Ejecutar(); }
+    public static void EjecutarIntro()
+    { EjecutarMenu(); SessionState.SetBool("GAMEJAM.SoloMensajes",false); }
     public static void EjecutarMenu()
     {
         if (!Application.isBatchMode) throw new InvalidOperationException("Validar en una copia con -batchmode.");
@@ -43,5 +45,6 @@ public static class ValidarNiveles
         new GameObject("PruebaIntegracion").AddComponent<PruebaNiveles>();
     }
 }
+
 
 

@@ -58,10 +58,11 @@ public sealed class InterfazPartida : MonoBehaviour
     void Update()
     {
         var e = EstadoPartida.Instancia;
-        bool jugando = SceneManager.GetActiveScene().name != "Menuprincipal";
+        string escena = SceneManager.GetActiveScene().name;
+        bool jugando = escena != "Menuprincipal" && escena != "IntroCinematica";
         raiz.SetActive(jugando);
         if (!jugando || e == null) return;
-        inventario.text = "INVENTARIO   " + (e.Objetos.Any() ? string.Join("  ", e.Objetos.Select(id => "[ " + (id == EstadoPartida.Fusible ? "Fusible" : id == EstadoPartida.LlaveMaestra ? "Llave maestra" : id) + " ]")) : "Vacío");
+        inventario.text = "INVENTARIO   " + (e.Objetos.Any() ? string.Join("  ", e.Objetos.Select(id => "[ " + (id == EstadoPartida.Fusible ? "Fusible" : id == EstadoPartida.LlaveMaestra ? "Llave maestra" : id == EstadoPartida.Zanahoria ? "Zanahoria" : id) + " ]")) : "Vacío");
         inventario.transform.parent.gameObject.SetActive(Keyboard.current != null && Keyboard.current.tabKey.isPressed && Time.timeScale > 0f);
         if (Time.timeScale > 0f && !panelLectura.activeSelf) segundosMensaje = Mathf.Max(0, segundosMensaje - Time.unscaledDeltaTime);
         mensaje.transform.parent.gameObject.SetActive(segundosMensaje > 0 && Time.timeScale > 0f && !panelLectura.activeSelf);
@@ -91,6 +92,7 @@ public sealed class InterfazPartida : MonoBehaviour
     public static void LimpiarMensajes() { if (actual != null) actual.segundosMensaje = 0; }
     void OnDestroy() { if (actual == this) actual = null; }
 }
+
 
 
 

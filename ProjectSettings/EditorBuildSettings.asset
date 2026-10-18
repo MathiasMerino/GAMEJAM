@@ -38,5 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HabitacionFinal/HabitacionFinal.unity
     guid: 6ee409a2d51737d42a1df69d910a84b0
+  - enabled: 1
+    path: Assets/Scenes/IntroduccionNarrativa/IntroCinematica.unity
+    guid: 15625721f348e9c44926ca8808f0d56b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+

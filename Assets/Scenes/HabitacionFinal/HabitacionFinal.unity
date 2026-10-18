@@ -161,7 +161,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: caf7782394aa1b34e96baf93d87b7558, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -369,7 +369,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: caf7782394aa1b34e96baf93d87b7558, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -453,6 +453,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6726654957716585681, guid: bbd128c33ca52b6419229a594d821657, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: caf7782394aa1b34e96baf93d87b7558, type: 2}
     - target: {fileID: 7350185947951206008, guid: bbd128c33ca52b6419229a594d821657, type: 3}
       propertyPath: m_Name
       value: PlayerTemporal
@@ -554,7 +558,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: caf7782394aa1b34e96baf93d87b7558, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -632,7 +636,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: caf7782394aa1b34e96baf93d87b7558, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public sealed class EstadoPartida : MonoBehaviour
 {
     public const string Fusible = "fusible";
+    public const string Zanahoria = "zanahoria";
     public const string LlaveMaestra = "llave_maestra";
     public static EstadoPartida Instancia { get; private set; }
     readonly HashSet<string> objetos = new HashSet<string>();
@@ -38,6 +39,7 @@ public sealed class EstadoPartida : MonoBehaviour
         Instancia = this;
         DontDestroyOnLoad(gameObject);
         gameObject.AddComponent<InterfazPartida>();
+        gameObject.AddComponent<AmbienteSonoro>();
         SceneManager.sceneLoaded += EscenaCargada;
     }
 
@@ -117,7 +119,7 @@ public sealed class EstadoPartida : MonoBehaviour
         mensajeLlegada = null;
     }
 
-    public void NuevaPartida()
+    public void NuevaPartida(bool mostrarIntro = false)
     {
         objetos.Clear();
         InterfazPartida.LimpiarMensajes();
@@ -125,9 +127,10 @@ public sealed class EstadoPartida : MonoBehaviour
         PuertaCDesbloqueada = CorredorSuperado = false;
         PasoMantenimiento = VueltasCorredor = 0;
         PersecucionSuperada=ParkourSuperado=ExperimentoCompletado=false;
-        Viajar("EscenaInicial", "");
+        Viajar(mostrarIntro ? "IntroCinematica" : "EscenaInicial", "");
     }
 }
+
 
 
 

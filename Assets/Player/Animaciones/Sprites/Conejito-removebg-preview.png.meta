@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 666b0b78c291ed148ba8094f6613d827
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8976237521207153704
+    second: Conejito-removebg-preview_0
+  - first:
+      213: 7536689986591978267
+    second: Conejito-removebg-preview_1
+  - first:
+      213: 22426208624719703
+    second: Conejito-removebg-preview_2
+  - first:
+      213: -2558959983723530019
+    second: Conejito-removebg-preview_3
+  - first:
+      213: 8858871474094814703
+    second: Conejito-removebg-preview_4
+  - first:
+      213: 5435159861163752793
+    second: Conejito-removebg-preview_5
+  - first:
+      213: -6876534526993105035
+    second: Conejito-removebg-preview_6
+  - first:
+      213: 809267870871209290
+    second: Conejito-removebg-preview_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Conejito-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 247
+        width: 122
+        height: 161
+      alignment: 9
+      pivot: {x: 0.55355424, y: 0.025507767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824d517a770029c70800000000000000
+      internalID: 8976237521207153704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torax
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 139
+        width: 242
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13fe099c93b79860800000000000000
+      internalID: 7536689986591978267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cabeza
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 245
+        width: 171
+        height: 163
+      alignment: 9
+      pivot: {x: 0.6351986, y: 0.074496776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7573cb6948caf4000800000000000000
+      internalID: 22426208624719703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conejito-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 251
+        width: 197
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd838b7e37fbc7cd0800000000000000
+      internalID: -2558959983723530019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pata_Izq
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 9
+        width: 76
+        height: 127
+      alignment: 9
+      pivot: {x: 0.51983863, y: 0.9194818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5334c5ba801fa70800000000000000
+      internalID: 8858871474094814703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pata_Derecha
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 2
+        width: 120
+        height: 131
+      alignment: 9
+      pivot: {x: 0.39948222, y: 0.9066734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d7026d8119d6b40800000000000000
+      internalID: 5435159861163752793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PA_Izquierda
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 12
+        width: 94
+        height: 125
+      alignment: 9
+      pivot: {x: 0.26762077, y: 0.86407834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ffdd8f744a190a0800000000000000
+      internalID: -6876534526993105035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PA_Derecha
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 11
+        width: 90
+        height: 125
+      alignment: 9
+      pivot: {x: 0.2207845, y: 0.9060899}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a454a6347d81b3b00800000000000000
+      internalID: 809267870871209290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 32254c8c86dd041468cb9ddee86e8faf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Conejito-removebg-preview_0: 8976237521207153704
+      Conejito-removebg-preview_3: -2558959983723530019
+      PA_Derecha: 809267870871209290
+      PA_Izquierda: -6876534526993105035
+      Pata_Derecha: 5435159861163752793
+      Pata_Izq: 8858871474094814703
+      cabeza: 22426208624719703
+      torax: 7536689986591978267
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,7 +7,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Jugar()
     {
-        EstadoPartida.Instancia.NuevaPartida();
+        EstadoPartida.Instancia.NuevaPartida(true);
     }
 
     public void Salir()
@@ -32,3 +32,4 @@ public class MenuPrincipal : MonoBehaviour
         }
     }
 }
+

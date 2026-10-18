@@ -1,0 +1,98 @@
+OK: Jugador inicial y detección de suelo configurados
+OK: Salto real con Input System en escena inicial
+OK: Mecanismo abre la jaula
+OK: Un único estado persistente en PasilloPrincipal
+OK: C permanece bloqueada sin llave
+OK: Un único estado persistente en Nivel1
+OK: Visitar B primero no permite instalar un fusible inexistente
+OK: E abre la nota y pausa la partida
+OK: La nota muestra la ilustración de mantenimiento
+OK: E cierra la nota sin reabrirla en el mismo frame
+OK: Un único estado persistente en PasilloPrincipal
+OK: Un único estado persistente en PuertaA
+OK: E recoge el fusible físico en A
+OK: La recogida confirma el fusible en pantalla
+OK: Un único estado persistente en PasilloPrincipal
+OK: Fusible conservado al volver al pasillo
+OK: La confirmación sobrevive al cambio inmediato de sala
+OK: Un único estado persistente en Nivel1
+OK: Instalación consume solo el fusible
+OK: El soporte muestra el fusible instalado
+OK: El manómetro ya no exige una interacción adicional
+OK: La instalación confirma el fusible colocado
+OK: El botón no resuelve el puzzle antes de restablecer el flujo
+OK: Un único estado persistente en PasilloPrincipal
+OK: Un único estado persistente en Nivel1
+OK: Secuencia parcial persiste entre escenas
+OK: Volver a girar la manija no borra el flujo restablecido
+OK: Fusible, manija y botón resuelven mantenimiento sin paso de presión
+OK: El botón desbloquea la puerta pero no entrega automáticamente la llave
+OK: La activación confirma qué puerta se desbloqueó
+OK: La llave se recoge en la puerta derecha
+OK: E en la puerta entrega la llave maestra
+OK: Un único estado persistente en PuertaA
+OK: El fusible instalado no reaparece
+OK: Un único estado persistente en PasilloPrincipal
+OK: E abre C con la llave
+OK: La llave no se consume al abrir C
+OK: Carteles ambientales conservan la secuencia de distancias
+OK: No se resuelve el bucle al entrar
+OK: Tres vueltas completas vuelven a 50 metros
+OK: La tercera vuelta da una pista clara de retroceso
+OK: El bucle no se resuelve quedándose quieto tras la tercera vuelta
+OK: Retroceder físicamente rompe el bucle y revela la puerta
+OK: Puerta revelada permite volver al pasillo
+OK: Al regresar se explica cómo continuar por C
+OK: Rótulo de C actualizado tras romper el bucle
+OK: Llave y solución conservadas al terminar
+OK: La puerta C conecta con persecución tras romper el bucle
+OK: Todos los enemigos de persecución utilizan Dr. Cortez
+OK: Dr. Cortez tiene cabeza, torso, piernas, brazo y linterna visibles
+OK: Los enemigos no se confunden con el jugador por su etiqueta
+OK: Dr. Cortez tiene animaciones conectadas
+OK: Los enemigos comienzan a moverse antes de un segundo
+OK: Los tres guardias proyectan un haz de linterna
+OK: No detecta al conejo detrás de la linterna
+OK: Detecta un punto dentro del cono iluminado
+OK: No detecta fuera del ángulo del haz
+OK: Un obstáculo bloquea la luz y la detección
+OK: Ver al conejo activa la persecución
+OK: Al perder al conejo deja de correr y busca su última posición
+OK: Reaparecer borra el estado de persecución
+OK: Al presionar contra el lateral de una caja el jugador cae al suelo sin quedarse pegado
+OK: El jugador puede saltar mientras está presionando contra una caja
+OK: La persecución guarda un punto de reaparición
+OK: El enemigo provoca reaparición sin perder la llave
+OK: Recorrido físico de persecución con saltos y enemigos activos
+OK: La persecución termina en el conducto vertical
+OK: Dr. Cortez sustituye también al enemigo escalador
+OK: Salto del parkour ligeramente reducido a 7,7
+OK: Parkour largo con al menos veinte plataformas
+OK: Salto físico hasta Plataforma_01 o plataforma superior; posición=(-0.08, 3.73, 0.00)
+OK: Salto físico hasta Plataforma_02 o plataforma superior; posición=(2.24, 5.04, 0.00)
+OK: Salto físico hasta Plataforma_03 o plataforma superior; posición=(0.08, 6.68, 0.00)
+OK: Salto físico hasta Plataforma_04 o plataforma superior; posición=(-2.16, 8.41, 0.00)
+OK: Salto físico hasta Plataforma_05 o plataforma superior; posición=(-0.08, 10.03, 0.00)
+OK: Salto físico hasta Plataforma_06 o plataforma superior; posición=(2.48, 11.70, 0.00)
+OK: Salto físico hasta Plataforma_07 o plataforma superior; posición=(-2.40, 12.51, 0.00)
+OK: Salto físico hasta Plataforma_08 o plataforma superior; posición=(2.48, 14.27, 0.00)
+OK: Salto físico hasta Plataforma_09 o plataforma superior; posición=(-2.56, 15.78, 0.00)
+OK: Salto físico hasta Plataforma_10 o plataforma superior; posición=(2.48, 16.98, 0.00)
+OK: Salto físico hasta Plataforma_11 o plataforma superior; posición=(-1.60, 18.66, 0.00)
+OK: Salto físico hasta Plataforma_12 o plataforma superior; posición=(2.56, 20.13, 0.00)
+OK: Salto físico hasta Plataforma_13 o plataforma superior; posición=(-1.44, 21.44, 0.00)
+OK: Salto físico hasta Plataforma_14 o plataforma superior; posición=(2.08, 24.23, 0.00)
+OK: Salto físico hasta Plataforma_17 o plataforma superior; posición=(-2.48, 24.88, 0.00)
+OK: Salto físico hasta Plataforma_18 o plataforma superior; posición=(-0.08, 27.70, 0.00)
+OK: Todos los saltos del ascenso son alcanzables con el controlador real
+OK: La cámara sigue al jugador hacia arriba
+OK: El escalador devuelve al último descanso del ascenso
+OK: La misma llave abre la salida final sin consumirse
+OK: Acercarse a la zanahoria no activa la caída sin interactuar
+OK: Interactuar recoge y conserva la zanahoria
+OK: La zanahoria recogida acompaña al conejo y no a la losa
+OK: El suelo cede después de recoger la zanahoria
+OK: La caída devuelve al conejo al laboratorio
+OK: La zanahoria sigue en el inventario después de la caída
+OK: La última habitación revela el final del experimento
+OK: Nueva partida reinicia la progresión

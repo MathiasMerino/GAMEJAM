@@ -112,14 +112,14 @@ public static class IntegrarAmbiente
                     if(m.esPortafusible)
                     {
                         r.sprite=soporteArte;
-                        detalle.localScale=new Vector3(.85f/soporteArte.bounds.size.x,.48f/soporteArte.bounds.size.y,1);
+                        detalle.localScale=new Vector3(1.1f/soporteArte.bounds.size.x,.62f/soporteArte.bounds.size.y,1);
                         var instalado=m.transform.Find("FusibleInstalado");
                         if(instalado==null){instalado=new GameObject("FusibleInstalado").transform;instalado.SetParent(m.transform,false);}
                         instalado.localPosition=new Vector3(0,-.02f,0);
-                        instalado.localScale=new Vector3(.42f/fusible.bounds.size.x,.14f/fusible.bounds.size.y,1);
+                        instalado.localScale=new Vector3(.55f/fusible.bounds.size.x,.18f/fusible.bounds.size.y,1);
                         var visual=Componente<SpriteRenderer>(instalado.gameObject);visual.sprite=fusible;visual.sharedMaterial=material;visual.sortingOrder=7;
                         m.fusibleVisible=instalado.gameObject;m.fusibleVisible.SetActive(false);
-                        m.tamanoClic=new Vector2(.9f,.6f);
+                        m.tamanoClic=new Vector2(1.15f,.8f);
                     }
                 }
                 var o=Object.FindAnyObjectByType<ObjetoRecogible>();o.enPuerta=true;o.gameObject.name="PuertaEntregaLlave";o.transform.position=new Vector3(bg.bounds.min.x+1469f/1672*bg.bounds.size.x,bg.bounds.max.y-520f/941*bg.bounds.size.y,0);
@@ -128,7 +128,7 @@ public static class IntegrarAmbiente
                 // sprite rect en unidades pequeñas sin escalar el área interactuable
                 srLlave.sprite=Recorte("LlaveEnEstante",llave.texture,llave.rect);
                 var dimensiones=srLlave.sprite.bounds.size;
-                o.transform.localScale=new Vector3(.55f/dimensiones.x,.22f/dimensiones.y,1);
+                o.transform.localScale=new Vector3(.75f/dimensiones.x,.30f/dimensiones.y,1);
                 var c=o.GetComponent<BoxCollider2D>();c.size=new Vector2(1.2f/o.transform.localScale.x,2.8f/o.transform.localScale.y);
                 c.offset=new Vector2(0,-.65f/o.transform.localScale.y);
                 o.permiteClic=true;o.tamanoClic=new Vector2(1.2f,2.8f);
@@ -147,7 +147,7 @@ public static class IntegrarAmbiente
                     {
                         sr.transform.position=new Vector3(4.3f,-.55f,0);
                         sr.sprite=fusible;sr.drawMode=SpriteDrawMode.Simple;sr.color=Color.white;
-                        sr.transform.localScale=new Vector3(.55f/fusible.bounds.size.x,.2f/fusible.bounds.size.y,1);
+                        sr.transform.localScale=new Vector3(.75f/fusible.bounds.size.x,.27f/fusible.bounds.size.y,1);
                         sr.GetComponent<BoxCollider2D>().size=new Vector2(1.1f/sr.transform.localScale.x,1.1f/sr.transform.localScale.y);
                     }
                 }
