@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/RabbitscapeMenu/Scene/Menuprincipal.unity
+    guid: 8b1bd13aa56cc994f8f7577fcc31f4eb
+  - enabled: 1
     path: Assets/Scenes/EscenaInicial/EscenaInicial.unity
     guid: c24a57989aed12d4b8086929686dda8b
   - enabled: 1
