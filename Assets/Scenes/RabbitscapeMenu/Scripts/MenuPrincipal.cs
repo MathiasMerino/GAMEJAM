@@ -7,7 +7,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Jugar()
     {
-        SceneManager.LoadScene("EscenaInicial");
+        SceneManager.LoadScene("IntroCinematica");
     }
 
     public void Salir()
