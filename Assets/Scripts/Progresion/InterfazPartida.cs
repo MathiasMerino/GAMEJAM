@@ -11,6 +11,7 @@ public sealed class InterfazPartida : MonoBehaviour
     GameObject raiz, panelLectura;
     float segundosMensaje;
     public static string TextoActual => actual != null && actual.segundosMensaje > 0 ? actual.mensaje.text : "";
+    public static bool PistaInicioVisible => actual != null && actual.indicacion.transform.parent.gameObject.activeInHierarchy;
     static readonly Color Tinta = new Color(0.055f, 0.07f, 0.08f, 0.94f);
 
     void Awake()
@@ -26,7 +27,7 @@ public sealed class InterfazPartida : MonoBehaviour
         scaler.referenceResolution = new Vector2(1600, 900);
         scaler.matchWidthOrHeight = 0.5f;
         inventario = Texto("Inventario", new Vector2(0,1), new Vector2(0,1), new Vector2(24,-18), new Vector2(730,42), 22, TextAnchor.MiddleLeft);
-        indicacion = Texto("Interaccion", new Vector2(0.5f,0), new Vector2(0.5f,0), new Vector2(0,30), new Vector2(1000,48), 24, TextAnchor.MiddleCenter);
+        indicacion = Texto("Interaccion", new Vector2(0.5f,1), new Vector2(0.5f,1), new Vector2(0,-24), new Vector2(1100,48), 24, TextAnchor.MiddleCenter);
         mensaje = Texto("Mensaje", new Vector2(0.5f,0), new Vector2(0.5f,0), new Vector2(0,34), new Vector2(1160,100), 28, TextAnchor.MiddleCenter);
         lectura = Texto("Lectura", new Vector2(0.5f,0.5f), new Vector2(0.5f,0.5f), Vector2.zero, new Vector2(1000,440), 28, TextAnchor.MiddleCenter);
         panelLectura = lectura.transform.parent.gameObject;
@@ -66,7 +67,9 @@ public sealed class InterfazPartida : MonoBehaviour
         inventario.transform.parent.gameObject.SetActive(Keyboard.current != null && Keyboard.current.tabKey.isPressed && Time.timeScale > 0f);
         if (Time.timeScale > 0f && !panelLectura.activeSelf) segundosMensaje = Mathf.Max(0, segundosMensaje - Time.unscaledDeltaTime);
         mensaje.transform.parent.gameObject.SetActive(segundosMensaje > 0 && Time.timeScale > 0f && !panelLectura.activeSelf);
-        indicacion.transform.parent.gameObject.SetActive(false);
+        bool inicio = escena == "EscenaInicial" && !e.JaulaAbierta && Time.timeScale > 0f && !panelLectura.activeSelf;
+        indicacion.text = "Presiona el botón rojo para comenzar";
+        indicacion.transform.parent.gameObject.SetActive(inicio);
     }
 
     public static void Indicar(string texto) { if (actual != null) actual.indicacion.text = texto; }
@@ -92,6 +95,7 @@ public sealed class InterfazPartida : MonoBehaviour
     public static void LimpiarMensajes() { if (actual != null) actual.segundosMensaje = 0; }
     void OnDestroy() { if (actual == this) actual = null; }
 }
+
 
 
 

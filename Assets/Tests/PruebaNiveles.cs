@@ -152,6 +152,7 @@ public sealed class PruebaNiveles : MonoBehaviour
         Comprobar(Jugador != null && Jugador.groundCheck != null && Jugador.capaSuelo.value != 0,"Jugador inicial y detección de suelo configurados");
         yield return new WaitForSecondsRealtime(0.5f);
         float suelo = Jugador.transform.position.y;
+        Comprobar(InterfazPartida.PistaInicioVisible,"La jaula muestra la indicación de presionar el botón rojo");
         Captura("00-inicial");
         Debug.Log("DIAGNOSTICO SALTO: y=" + suelo + " ground=" + Physics2D.OverlapCircle(Jugador.groundCheck.position,Jugador.radioSuelo,Jugador.capaSuelo) + " teclado=" + Keyboard.current);
         Debug.Log("DIAGNOSTICO CUERPO " + Jugador.GetComponent<Collider2D>().bounds + " piso=" + GameObject.Find("Piso").GetComponent<Collider2D>().bounds + " gc=" + Jugador.groundCheck.position);
@@ -166,6 +167,7 @@ public sealed class PruebaNiveles : MonoBehaviour
         InputSystem.QueueStateEvent(raton,new MouseState { position = posicionRaton });
         yield return null;
         Comprobar(Estado.JaulaAbierta && !Object.FindAnyObjectByType<BotonJaula>().jaulaInicial.activeSelf,"Mecanismo abre la jaula");
+        Comprobar(!InterfazPartida.PistaInicioVisible,"La indicación desaparece al abrir la jaula");
         yield return Viajar("PasilloPrincipal","DesdeInicial");
         var puertaC = Object.FindObjectsByType<PuertaCambioEscena>().First(p => p.puertaC);
         puertaC.Interactuar(); yield return Esperar();
@@ -465,6 +467,7 @@ public sealed class PruebaNiveles : MonoBehaviour
 }
 
 #endif
+
 
 
 
