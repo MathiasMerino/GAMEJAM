@@ -54,8 +54,12 @@ public static class IntegrarJugadorGrecia
         var existente=jugador.transform.Find("ConejoGrecia");
         foreach(var sprite in jugador.GetComponentsInChildren<SpriteRenderer>(true))
             if(existente==null || !sprite.transform.IsChildOf(existente))sprite.enabled=false;
-        if(existente!=null)return;
+        if(existente!=null)
+        {
+            existente.localScale=Vector3.one;
+            return;
+        }
         var visual=(GameObject)PrefabUtility.InstantiatePrefab(visualPrefab);
-        visual.transform.SetParent(jugador.transform,false);visual.name="ConejoGrecia";
+        visual.transform.SetParent(jugador.transform,false);visual.name="ConejoGrecia";visual.transform.localScale=Vector3.one;
     }
 }

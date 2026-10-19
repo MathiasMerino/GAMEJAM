@@ -210,7 +210,13 @@ public static class PrepararNiveles
         var boton = Object.FindAnyObjectByType<BotonJaula>();
         boton.transform.position = new Vector3(-1.16f,-0.47f,0);
         var bc = boton.GetComponent<BoxCollider2D>(); bc.offset = Vector2.zero; bc.size = new Vector2(0.65f,0.7f);
-        Rotulo("CLIC · ABRIR JAULA",-1.16f,0.22f,3f);
+        Forma("CartelJaulaLED",-1.16f,2.1f,4.55f,0.78f,new Color(0.12f,0.008f,0.012f),10);
+        var textoCartel=Go("Rotulo_PRESIONA EL BOTON ROJO",-1.16f,2.1f).AddComponent<TextMesh>();
+        textoCartel.text="PRESIONA EL BOTON ROJO\nPARA ABRIR LA JAULA";
+        textoCartel.fontSize=48;textoCartel.characterSize=0.065f;textoCartel.fontStyle=FontStyle.Bold;
+        textoCartel.anchor=TextAnchor.MiddleCenter;textoCartel.alignment=TextAlignment.Center;
+        textoCartel.color=new Color(1f,0.035f,0.025f);
+        textoCartel.GetComponent<MeshRenderer>().sortingOrder=11;
         var cam = Camera.main.gameObject.AddComponent<CamaraNivel>(); cam.altura = 5;
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
     }
