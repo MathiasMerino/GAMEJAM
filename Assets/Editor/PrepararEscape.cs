@@ -106,7 +106,7 @@ public static class PrepararEscape
             Caja("Obstaculo_"+i,x,-1.6f+h/2,.9f,h);Arte("Caja_"+i,caja,x,-1.6f+h/2,.9f,h);
         }
         Checkpoint(11,-1.05f);Checkpoint(28,-1.05f);
-        Enemigo(-12,-1.05f);Enemigo(17,-1.05f,false,true);Enemigo(36,-1.05f,false,true);
+        Enemigo(-12,-1.05f);
         var salida=Caja("EntradaConducto",43,-.5f,1.4f,4,true).gameObject.AddComponent<SalidaEtapa>();salida.destino="EscapeVertical";salida.terminaPersecucion=true;
         var cam=Camera.main.GetComponent<CamaraNivel>();cam.seguirHorizontal=true;cam.minimoX=0;cam.maximoX=35.56f;
         Guardar("Persecucion");
@@ -129,7 +129,7 @@ public static class PrepararEscape
         var recuperacion=p.GetComponent<RecuperarJugador>();recuperacion.seguirAlturaCheckpoint=true;recuperacion.limiteCaida=-3;
         // El parkour se recorre sin enemigo.
         var puerta=Caja("PuertaFinal",-.4f,28.15f,1.8f,2.4f,true).gameObject.AddComponent<PuertaFinal>();puerta.indicacion="Abrir salida";
-        var cam=Camera.main.GetComponent<CamaraNivel>();cam.seguirVertical=true;cam.altura=4;cam.semiancho=5;cam.minimoY=4;cam.maximoY=26;
+        var cam=Camera.main.GetComponent<CamaraNivel>();cam.seguirVertical=true;cam.altura=5;cam.semiancho=8.89f;cam.minimoY=5;cam.maximoY=25;
         Guardar("EscapeVertical");
     }
     static void AjustarParkour()
@@ -175,5 +175,7 @@ public static class PrepararEscape
         Go("RegistroFinal",0,0).AddComponent<FinalExperimento>();Guardar("HabitacionFinal");
     }
 }
+
+
 
 

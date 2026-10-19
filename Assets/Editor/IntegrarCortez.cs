@@ -81,14 +81,15 @@ public static class IntegrarCortez
         foreach(var escena in new[]{"Persecucion"})
         {
             EditorSceneManager.OpenScene("Assets/Scenes/"+escena+"/"+escena+".unity");
+            foreach(var patrullero in Object.FindObjectsByType<EnemigoTemporal>().Where(e=>e.patrulla))Object.DestroyImmediate(patrullero.gameObject);
             foreach(var enemigo in Object.FindObjectsByType<EnemigoTemporal>())
             {
                 foreach(Transform hijo in enemigo.transform.Cast<Transform>().ToArray())
                     if(hijo.name=="CortezVisual")Object.DestroyImmediate(hijo.gameObject);
                     else hijo.gameObject.SetActive(false);
                 var visual=(GameObject)PrefabUtility.InstantiatePrefab(prefab);visual.name="CortezVisual";
-                visual.transform.SetParent(enemigo.transform,false);visual.transform.localPosition=new Vector3(0,-.55f,0);visual.transform.localScale=Vector3.one*.235f;
-                var c=enemigo.GetComponent<BoxCollider2D>();c.size=new Vector2(.65f,1.5f);c.offset=new Vector2(0,.25f);
+                visual.transform.SetParent(enemigo.transform,false);visual.transform.localPosition=new Vector3(0,-.55f,0);visual.transform.localScale=Vector3.one*.28f;
+                var c=enemigo.GetComponent<BoxCollider2D>();c.size=new Vector2(.78f,1.8f);c.offset=new Vector2(0,.4f);
                 enemigo.gameObject.tag="Untagged";
             }
             EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
@@ -96,5 +97,6 @@ public static class IntegrarCortez
         AssetDatabase.SaveAssets();
     }
 }
+
 
 

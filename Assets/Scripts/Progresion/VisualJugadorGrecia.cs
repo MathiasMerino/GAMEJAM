@@ -16,13 +16,13 @@ public sealed class VisualJugadorGrecia : MonoBehaviour
     Vector2 velocidadActual;
     float faseSaltito;
     float ultimoContactoSuelo;
-    float tiempoAterrizaje;
+
     float direccionActual=1f;
-    bool estabaEnAire;
+
     bool enAireActual;
     string clipActual="";
 
-    const float DuracionAterrizaje=.12f;
+
 
     void Awake()
     {
@@ -50,13 +50,13 @@ public sealed class VisualJugadorGrecia : MonoBehaviour
         enAireActual=!suelo;
         if(Mathf.Abs(velocidad.x)>.05f)direccionActual=velocidad.x<0f?-1f:1f;
 
-        if(estabaEnAire&&suelo)tiempoAterrizaje=DuracionAterrizaje;
-        estabaEnAire=!suelo;
-        tiempoAterrizaje=Mathf.Max(0f,tiempoAterrizaje-Time.deltaTime);
+
+
+
 
         Vector3 escalaPadreActual=transform.parent!=null?transform.parent.lossyScale:Vector3.one;
-        float factorX=1f;
-        float factorY=1f;
+
+
         bool caminando=suelo&&Mathf.Abs(velocidad.x)>.1f;
         EstadoAnimacion=!suelo?(velocidad.y>.15f?"Saltar":"Caer"):caminando?"Caminar":"Reposo";
 
@@ -84,12 +84,12 @@ public sealed class VisualJugadorGrecia : MonoBehaviour
             faseSaltito=0f;
             transform.localPosition=posicionBase;
 
-            // El conejo alarga el cuerpo al impulsarse y baja el hocico al descender.
+            // Inclinar el cuerpo conserva sus proporciones durante el salto.
             // El signo de la inclinacion hace que mire hacia delante en la caida.
             float ascenso=Mathf.InverseLerp(-8f,7f,Mathf.Clamp(velocidad.y,-8f,7f));
             float descenso=velocidad.y<0f?Mathf.InverseLerp(0f,-8f,velocidad.y):0f;
-            factorX=1f+.12f*ascenso+.035f*descenso;
-            factorY=1f-.13f*ascenso-.045f*descenso;
+
+
             float inclinacion=12f*ascenso-10f*descenso;
             transform.localRotation=rotacionBase*Quaternion.Euler(0f,0f,direccionActual*inclinacion);
             animador.speed=1f;
@@ -99,18 +99,13 @@ public sealed class VisualJugadorGrecia : MonoBehaviour
             faseSaltito=0;
             transform.localPosition=posicionBase;
             transform.localRotation=rotacionBase;
-            if(tiempoAterrizaje>0f)
-            {
-                float impacto=tiempoAterrizaje/DuracionAterrizaje;
-                factorX=Mathf.Lerp(1f,1.07f,impacto);
-                factorY=Mathf.Lerp(1f,.88f,impacto);
-            }
+
             animador.speed=1;
         }
 
         transform.localScale=new Vector3(
-            escalaBase.x/Mathf.Max(.0001f,Mathf.Abs(escalaPadreActual.x))*direccionActual*factorX,
-            escalaBase.y/Mathf.Max(.0001f,Mathf.Abs(escalaPadreActual.y))*factorY,
+            escalaBase.x/Mathf.Max(.0001f,Mathf.Abs(escalaPadreActual.x))*direccionActual,
+            escalaBase.y/Mathf.Max(.0001f,Mathf.Abs(escalaPadreActual.y)),
             escalaBase.z/Mathf.Max(.0001f,Mathf.Abs(escalaPadreActual.z)));
     }
 
@@ -172,3 +167,4 @@ public sealed class VisualJugadorGrecia : MonoBehaviour
         pieza.localEulerAngles=euler;
     }
 }
+

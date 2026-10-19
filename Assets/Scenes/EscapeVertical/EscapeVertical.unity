@@ -2721,12 +2721,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CamaraNivel
   seguirHorizontal: 0
   seguirVertical: 1
-  minimoY: 4
-  maximoY: 26
-  semiancho: 5
+  minimoY: 5
+  maximoY: 25
+  semiancho: 8.89
   minimoX: 0
   maximoX: 0
-  altura: 4
+  altura: 5
 --- !u!81 &1817905211
 AudioListener:
   m_ObjectHideFlags: 0

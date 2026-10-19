@@ -89,6 +89,7 @@ public sealed class PruebaNiveles : MonoBehaviour
         { if (Time.realtimeSinceStartup > limite) throw new Exception("No cargó " + destino); yield return null; }
         yield return Esperar();
         Comprobar(Object.FindObjectsByType<EstadoPartida>().Length == 1,"Un único estado persistente en " + destino);
+        if(Jugador!=null)ComprobarEscala();
     }
 
     IEnumerator Prueba()
@@ -153,7 +154,7 @@ public sealed class PruebaNiveles : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         float suelo = Jugador.transform.position.y;
         Comprobar(InterfazPartida.PistaInicioVisible,"La jaula muestra la indicación de presionar el botón rojo");
-        Captura("00-inicial");
+        ComprobarEscala(); Captura("00-inicial");
         Debug.Log("DIAGNOSTICO SALTO: y=" + suelo + " ground=" + Physics2D.OverlapCircle(Jugador.groundCheck.position,Jugador.radioSuelo,Jugador.capaSuelo) + " teclado=" + Keyboard.current);
         Debug.Log("DIAGNOSTICO CUERPO " + Jugador.GetComponent<Collider2D>().bounds + " piso=" + GameObject.Find("Piso").GetComponent<Collider2D>().bounds + " gc=" + Jugador.groundCheck.position);
         yield return Tecla(Key.Space);
@@ -270,6 +271,9 @@ public sealed class PruebaNiveles : MonoBehaviour
         Comprobar(Object.FindAnyObjectByType<AmbienteSonoro>().AmbienteActual=="Acecho","La persecución activa el ambiente de tensión");
         Captura("05-persecucion");
         var perseguidores=Object.FindObjectsByType<EnemigoTemporal>();
+        Comprobar(perseguidores.Length==1 && !perseguidores[0].patrulla,"La persecución tiene un único enemigo perseguidor");
+        var escalaEnemigo=perseguidores[0].transform.Find("CortezVisual").localScale;
+        Comprobar(Mathf.Abs(Mathf.Abs(escalaEnemigo.x)-.28f)<.001f && Mathf.Abs(escalaEnemigo.y-.28f)<.001f,"El enemigo es mayor y conserva sus proporciones");
         Comprobar(perseguidores.All(e=>e.GetComponentInChildren<VisualEnemigoCortez>()!=null),"Todos los enemigos de persecución utilizan Dr. Cortez");
         Comprobar(perseguidores.All(e=>e.GetComponentsInChildren<SpriteRenderer>().Length==6),"Dr. Cortez tiene cabeza, torso, piernas, brazo y linterna visibles");
         Comprobar(GameObject.FindGameObjectsWithTag("Player").Length==1,"Los enemigos no se confunden con el jugador por su etiqueta");
@@ -295,7 +299,7 @@ public sealed class PruebaNiveles : MonoBehaviour
         Comprobar(recuperacion.Reintentos>0 && Estado.Tiene(EstadoPartida.LlaveMaestra),"El enemigo provoca reaparición sin perder la llave");
         yield return RecorrerPersecucion();
         Comprobar(SceneManager.GetActiveScene().name=="EscapeVertical" && Estado.PersecucionSuperada,"La persecución termina en el conducto vertical");
-        Captura("06-parkour-inicio");
+        ComprobarEscala(); Captura("06-parkour-inicio");
         Comprobar(Object.FindObjectsByType<EnemigoTemporal>(FindObjectsInactive.Include).Length==0,"El parkour no contiene enemigos, ni siquiera desactivados");
         Comprobar(Mathf.Approximately(Jugador.fuerzaSalto,7.7f),"Salto del parkour ligeramente reducido a 7,7");
         // Comprobar el recorrido físico por separado del temporizador de persecución.
@@ -318,7 +322,7 @@ public sealed class PruebaNiveles : MonoBehaviour
         Colocar(new Vector2(-.4f,28));yield return Esperar();yield return Tecla(Key.E);yield return new WaitForSecondsRealtime(.7f);
         Comprobar(SceneManager.GetActiveScene().name=="Valle" && Estado.ParkourSuperado && Estado.Tiene(EstadoPartida.LlaveMaestra),"La misma llave abre la salida final sin consumirse");
         Comprobar(Object.FindAnyObjectByType<AmbienteSonoro>().AmbienteActual=="FalsaCalma","El valle cambia al ambiente de falsa calma");
-        Captura("08-valle");
+        ComprobarEscala(); Captura("08-valle");
         Colocar(new Vector2(10.7f,-1.8f));yield return Esperar();
         var trampa=Object.FindAnyObjectByType<TrampaZanahoria>();
         Comprobar(!trampa.Activada && trampa.sueloTrampa.enabled,"Acercarse a la zanahoria no activa la caída sin interactuar");
@@ -334,11 +338,25 @@ public sealed class PruebaNiveles : MonoBehaviour
         Comprobar(Estado.Tiene(EstadoPartida.Zanahoria),"La zanahoria sigue en el inventario después de la caída");
         yield return new WaitForSecondsRealtime(3f);
         Comprobar(Estado.ExperimentoCompletado,"La última habitación revela el final del experimento");
-        Captura("09-final");
+        ComprobarEscala(); Captura("09-final");
         yield return Tecla(Key.R);yield return new WaitForSecondsRealtime(.7f);
         Comprobar(!Estado.Tiene(EstadoPartida.LlaveMaestra) && !Estado.JaulaAbierta && !Estado.CorredorSuperado && !Estado.PersecucionSuperada && !Estado.ParkourSuperado && !Estado.ExperimentoCompletado,"Nueva partida reinicia la progresión");
     }
 
+    void ComprobarEscala()
+    {
+        var visual=Jugador.GetComponentInChildren<VisualJugadorGrecia>();
+        Vector3 escala=visual.transform.lossyScale;
+        Comprobar(Mathf.Abs(Mathf.Abs(escala.x)-1)<.002f && Mathf.Abs(Mathf.Abs(escala.y)-1)<.002f,"Escala uniforme del conejo sin estiramiento en "+SceneManager.GetActiveScene().name);
+        var cam=Camera.main;var ajuste=cam.GetComponent<CamaraNivel>();
+        float aspecto=cam.aspect;
+        foreach(float proporcion in new[]{16f/9f,4f/3f,21f/9f})
+        {
+            cam.aspect=proporcion;ajuste.SendMessage("LateUpdate");
+            Comprobar(Mathf.Abs(cam.orthographicSize-Mathf.Max(5f,8.89f/proporcion))<.002f,"Encuadre consistente en "+SceneManager.GetActiveScene().name+" a "+proporcion.ToString("F2"));
+        }
+        cam.aspect=aspecto;ajuste.SendMessage("LateUpdate");
+    }
     IEnumerator ProbarAnimacionesConejo()
     {
         var visual=Jugador.GetComponentInChildren<VisualJugadorGrecia>();
@@ -354,10 +372,10 @@ public sealed class PruebaNiveles : MonoBehaviour
         Comprobar(visual.transform.localScale.x<0,"El conejo gira a la izquierda sin invertir su collider");
         yield return Tecla(Key.Space,.12f);
         Comprobar(visual.EstadoAnimacion=="Saltar","El impulso real activa la animación de salto");
-        Captura("conejo-salto");
+        ComprobarEscala(); Captura("conejo-salto");
         yield return new WaitForSecondsRealtime(.7f);
         Comprobar(visual.EstadoAnimacion=="Caer","La bajada activa la animación de caída");
-        Captura("conejo-caida");
+        ComprobarEscala(); Captura("conejo-caida");
         yield return new WaitForSecondsRealtime(.8f);
         Comprobar(visual.EstadoAnimacion=="Reposo","Aterrizar devuelve al reposo");
         Time.timeScale=0;yield return null;
@@ -366,7 +384,7 @@ public sealed class PruebaNiveles : MonoBehaviour
     }
     IEnumerator ProbarLinterna()
     {
-        Comprobar(Object.FindObjectsByType<LinternaEnemigo>().Length==3,"Los tres guardias proyectan un haz de linterna");
+        Comprobar(Object.FindObjectsByType<LinternaEnemigo>().Length==1,"El único perseguidor proyecta su haz de linterna");
         var posicion=Jugador.transform.position;
         var rb=Jugador.GetComponent<Rigidbody2D>(); rb.simulated=false;
         var guardia=new GameObject("GuardiaPrueba");guardia.transform.position=new Vector3(1000,1000,0);
@@ -467,6 +485,8 @@ public sealed class PruebaNiveles : MonoBehaviour
 }
 
 #endif
+
+
 
 
 

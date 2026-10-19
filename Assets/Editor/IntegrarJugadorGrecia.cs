@@ -32,7 +32,7 @@ public static class IntegrarJugadorGrecia
         AssetDatabase.LoadAssetAtPath<AnimationClip>("Assets/Player/Animaciones/Clips/Conejo_Reposo.anim").SampleAnimation(visual,0);
         var sprites=visual.GetComponentsInChildren<SpriteRenderer>();
         var limites=sprites[0].bounds;foreach(var sprite in sprites){limites.Encapsulate(sprite.bounds);sprite.sharedMaterial=AssetDatabase.LoadAssetAtPath<Material>("Assets/Sprites/Prototipos/IlustracionSinLuz.mat");}
-        float escala=1.15f/limites.size.y;
+        float escala=1.4f/limites.size.y;
         visual.transform.localScale=Vector3.one*escala;
         visual.transform.localPosition=new Vector3(-limites.center.x*escala,-.475f-limites.min.y*escala,0);
         contenedor.AddComponent<VisualJugadorGrecia>().animador=animador;
@@ -44,6 +44,11 @@ public static class IntegrarJugadorGrecia
         {
             EditorSceneManager.OpenScene("Assets/Scenes/"+escena+"/"+escena+".unity");
             foreach(var jugador in Object.FindObjectsByType<MovimientoPlayer>())Colocar(jugador);
+            foreach(var camara in Object.FindObjectsByType<CamaraNivel>())
+            {
+                camara.altura=5f;camara.semiancho=8.89f;
+                if(camara.seguirVertical){camara.minimoY=5;camara.maximoY=25;}
+            }
             if(escena=="EscapeVertical")foreach(var enemigo in Object.FindObjectsByType<EnemigoTemporal>())Object.DestroyImmediate(enemigo.gameObject);
             EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
         }
@@ -63,3 +68,4 @@ public static class IntegrarJugadorGrecia
         visual.transform.SetParent(jugador.transform,false);visual.name="ConejoGrecia";visual.transform.localScale=Vector3.one;
     }
 }
+
