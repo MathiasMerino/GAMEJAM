@@ -1,0 +1,326 @@
+fileFormatVersion: 2
+guid: 0acbb1ad6709fd3488da409c0a060ba2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2197366431439816812
+    second: silueta-removebg-preview_0
+  - first:
+      213: -5689902189484153086
+    second: silueta-removebg-preview_1
+  - first:
+      213: 8871142990549037867
+    second: silueta-removebg-preview_2
+  - first:
+      213: 3468630175371158130
+    second: silueta-removebg-preview_3
+  - first:
+      213: 3811208346066620697
+    second: silueta-removebg-preview_4
+  - first:
+      213: 1123006310679114525
+    second: silueta-removebg-preview_5
+  - first:
+      213: 2978845717400938826
+    second: silueta-removebg-preview_6
+  - first:
+      213: 2652345102489011008
+    second: silueta-removebg-preview_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: silueta-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 251
+        width: 164
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5153226, y: 0.037090905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49779ac6fd26181e0800000000000000
+      internalID: -2197366431439816812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torax
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 137
+        width: 263
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2076415ea186901b0800000000000000
+      internalID: -5689902189484153086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cabeza
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 251
+        width: 189
+        height: 154
+      alignment: 9
+      pivot: {x: 0.56913865, y: 0.059420303}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b233f5f6c81ac1b70800000000000000
+      internalID: 8871142990549037867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silueta-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 271
+        width: 217
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272e23454cc032030800000000000000
+      internalID: 3468630175371158130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pata_Izq
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 12
+        width: 90
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5893485, y: 0.89178014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9111e405cc124e430800000000000000
+      internalID: 3811208346066620697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pata_Derecha
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 14
+        width: 89
+        height: 120
+      alignment: 9
+      pivot: {x: 0.31929395, y: 0.9104456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13fc842a48b59f00800000000000000
+      internalID: 1123006310679114525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Izq
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 10
+        width: 101
+        height: 127
+      alignment: 9
+      pivot: {x: 0.2113853, y: 0.87595063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49606ab56cf65920800000000000000
+      internalID: 2978845717400938826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Derech
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 13
+        width: 98
+        height: 128
+      alignment: 9
+      pivot: {x: 0.30669695, y: 0.8683077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043ca9761d50fc420800000000000000
+      internalID: 2652345102489011008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 790302b4404692047be2e2d05eb6eaa1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pata_Derecha: 1123006310679114525
+      Pata_Izq: 3811208346066620697
+      T_Derech: 2652345102489011008
+      T_Izq: 2978845717400938826
+      a: 2652345102489011008
+      cabeza: 8871142990549037867
+      silueta-removebg-preview_0: -2197366431439816812
+      silueta-removebg-preview_3: 3468630175371158130
+      torax: -5689902189484153086
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

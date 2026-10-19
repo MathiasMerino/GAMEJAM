@@ -5,8 +5,42 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/RabbitscapeMenu/Scene/Menuprincipal.unity
+    guid: 8b1bd13aa56cc994f8f7577fcc31f4eb
+  - enabled: 1
+    path: Assets/Scenes/EscenaInicial/EscenaInicial.unity
+    guid: c24a57989aed12d4b8086929686dda8b
+  - enabled: 1
+    path: Assets/Scenes/Nivel1/Nivel1.unity
+    guid: 0757219de64fa4f42b435f1924c1885e
+  - enabled: 1
+    path: Assets/Scenes/PasilloPrincipal/PasilloPrincipal.unity
+    guid: cb4ae76fc5d065544b706d3e790e4006
+  - enabled: 1
+    path: Assets/Scenes/PuertaA/PuertaA.unity
+    guid: dabd4723ce1b8bf4393d78d0319c01e0
+  - enabled: 1
+    path: Assets/Scenes/PuertaC/PuertaC.unity
+    guid: 0a31fc2e585016648b0180eb4d9fd305
+  - enabled: 1
+    path: Assets/Scenes/Persecucion/Persecucion.unity
+    guid: 0fa012051f2ce2a4d81814bda824b01d
+  - enabled: 1
+    path: Assets/Scenes/EscapeVertical/EscapeVertical.unity
+    guid: 67b2215d227456944865d5c4d4303558
+  - enabled: 1
+    path: Assets/Scenes/Valle/Valle.unity
+    guid: 63567e24661159b4dafdf71347511354
+  - enabled: 1
+    path: Assets/Scenes/HabitacionFinal/HabitacionFinal.unity
+    guid: 6ee409a2d51737d42a1df69d910a84b0
+  - enabled: 1
+    path: Assets/Scenes/IntroduccionNarrativa/IntroCinematica.unity
+    guid: 15625721f348e9c44926ca8808f0d56b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+

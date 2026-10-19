@@ -1,0 +1,69 @@
+OK: Jugador inicial y detección de suelo configurados
+OK: Salto real con Input System en escena inicial
+OK: Mecanismo abre la jaula
+OK: Un único estado persistente en PasilloPrincipal
+OK: C permanece bloqueada sin llave
+OK: Un único estado persistente en Nivel1
+OK: Visitar B primero no permite instalar un fusible inexistente
+OK: E abre la nota y pausa la partida
+OK: La nota muestra la ilustración de mantenimiento
+OK: E cierra la nota sin reabrirla en el mismo frame
+OK: Un único estado persistente en PasilloPrincipal
+OK: Un único estado persistente en PuertaA
+OK: E recoge el fusible físico en A
+OK: Un único estado persistente en PasilloPrincipal
+OK: Fusible conservado al volver al pasillo
+OK: Un único estado persistente en Nivel1
+OK: Instalación consume solo el fusible
+OK: El soporte muestra el fusible instalado
+OK: El manómetro ya no exige una interacción adicional
+OK: El botón no resuelve el puzzle antes de restablecer el flujo
+OK: Un único estado persistente en PasilloPrincipal
+OK: Un único estado persistente en Nivel1
+OK: Secuencia parcial persiste entre escenas
+OK: Volver a girar la manija no borra el flujo restablecido
+OK: Fusible, manija y botón resuelven mantenimiento sin paso de presión
+OK: El botón desbloquea la puerta pero no entrega automáticamente la llave
+OK: La llave se recoge en la puerta derecha
+OK: E en la puerta entrega la llave maestra
+OK: Un único estado persistente en PuertaA
+OK: El fusible instalado no reaparece
+OK: Un único estado persistente en PasilloPrincipal
+OK: E abre C con la llave
+OK: La llave no se consume al abrir C
+OK: No se resuelve el bucle al entrar
+OK: Tres vueltas completas vuelven a 50 metros
+OK: Retroceder físicamente rompe el bucle y revela la puerta
+OK: Puerta revelada permite volver al pasillo
+OK: Rótulo de C actualizado tras romper el bucle
+OK: Llave y solución conservadas al terminar
+OK: La puerta C conecta con persecución tras romper el bucle
+OK: La persecución guarda un punto de reaparición
+OK: El enemigo provoca reaparición sin perder la llave
+OK: Recorrido físico de persecución con saltos y enemigos activos
+OK: La persecución termina en el conducto vertical
+OK: Parkour largo con al menos veinte plataformas
+OK: Salto físico hasta Plataforma_01 o plataforma superior; posición=(-0.11, 3.73, 0.00)
+OK: Salto físico hasta Plataforma_02 o plataforma superior; posición=(2.20, 5.04, 0.00)
+OK: Salto físico hasta Plataforma_03 o plataforma superior; posición=(0.11, 6.68, 0.00)
+OK: Salto físico hasta Plataforma_04 o plataforma superior; posición=(-2.10, 8.41, 0.00)
+OK: Salto físico hasta Plataforma_05 o plataforma superior; posición=(-0.07, 10.03, 0.00)
+OK: Salto físico hasta Plataforma_06 o plataforma superior; posición=(2.47, 11.71, 0.00)
+OK: Salto físico hasta Plataforma_07 o plataforma superior; posición=(-2.35, 12.51, 0.00)
+OK: Salto físico hasta Plataforma_08 o plataforma superior; posición=(2.54, 14.27, 0.00)
+OK: Salto físico hasta Plataforma_09 o plataforma superior; posición=(-2.61, 15.78, 0.00)
+OK: Salto físico hasta Plataforma_10 o plataforma superior; posición=(2.46, 16.98, 0.00)
+OK: Salto físico hasta Plataforma_11 o plataforma superior; posición=(-1.56, 18.66, 0.00)
+OK: Salto físico hasta Plataforma_12 o plataforma superior; posición=(2.54, 20.13, 0.00)
+OK: Salto físico hasta Plataforma_13 o plataforma superior; posición=(-1.44, 21.44, 0.00)
+OK: Salto físico hasta Plataforma_14 o plataforma superior; posición=(2.02, 24.21, 0.00)
+OK: Salto físico hasta Plataforma_16 o plataforma superior; posición=(0.09, 25.68, 0.00)
+OK: Salto físico hasta Plataforma_19 o plataforma superior; posición=(1.93, 27.82, 0.00)
+OK: Todos los saltos del ascenso son alcanzables con el controlador real
+OK: La cámara sigue al jugador hacia arriba
+OK: El escalador devuelve al último descanso del ascenso
+OK: La misma llave abre la salida final sin consumirse
+OK: Acercarse a la zanahoria hace ceder el suelo
+OK: La caída devuelve al conejo al laboratorio
+OK: La última habitación revela el final del experimento
+OK: Nueva partida reinicia la progresión

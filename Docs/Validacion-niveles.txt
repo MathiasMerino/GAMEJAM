@@ -1,0 +1,34 @@
+OK: Jugador inicial y detección de suelo configurados
+OK: Salto real con Input System en escena inicial
+OK: Mecanismo abre la jaula
+OK: Un único estado persistente en PasilloPrincipal
+OK: C permanece bloqueada sin llave
+OK: Un único estado persistente en Nivel1
+OK: Visitar B primero no permite instalar un fusible inexistente
+OK: E abre la nota y pausa la partida
+OK: E cierra la nota sin reabrirla en el mismo frame
+OK: Un único estado persistente en PasilloPrincipal
+OK: Un único estado persistente en PuertaA
+OK: E recoge el fusible físico en A
+OK: Un único estado persistente en PasilloPrincipal
+OK: Fusible conservado al volver al pasillo
+OK: Un único estado persistente en Nivel1
+OK: Instalación consume solo el fusible
+OK: Secuencia incorrecta reinicia el puzzle
+OK: Un único estado persistente en PasilloPrincipal
+OK: Un único estado persistente en Nivel1
+OK: Secuencia parcial persiste entre escenas
+OK: Orden flujo-presión-energía resuelve mantenimiento
+OK: Compartimento entrega la llave
+OK: Un único estado persistente en PuertaA
+OK: El fusible instalado no reaparece
+OK: Un único estado persistente en PasilloPrincipal
+OK: E abre C con la llave
+OK: La llave no se consume al abrir C
+OK: No se resuelve el bucle al entrar
+OK: Tres vueltas completas vuelven a 50 metros
+OK: Retroceder físicamente rompe el bucle y revela la puerta
+OK: Puerta revelada permite volver al pasillo
+OK: Rótulo de C actualizado tras romper el bucle
+OK: Llave y solución conservadas al terminar
+OK: Nueva partida reinicia la progresión
